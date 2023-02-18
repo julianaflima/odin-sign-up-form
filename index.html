@@ -23,7 +23,7 @@
 			</div>
 		</div>
 
-		<div class="bg-light pt-5">
+		<div class="bg-light pt-5 flex-grow-1">
 			<div class="fw-bold p-5">
 				<p>
 				This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
@@ -35,47 +35,61 @@
 				</p>
 			</div>
 			
-			<div class="form-side">
-				<div class="p-5 pb-0">
-					Let's do this!
-				</div>
+			<div class="light-section">
+				<form action="qualquercoisa.com">
+					
+					<div class="px-5 pt-4 shadow">
+						<h4 class="pb-3"> Let's do this!</h4>
 
-				<form class="d-flex flex-wrap p-5 pt-4 form shadow">
-					<div class="mb-3">
-						<label for="first-name" class="form-label">First Name</label>
-						<input type="text" name="first-name" id="first-name" class="form-control">
-					</div>
+						<div class="my-table">
+							<div class="row">
+								<div class="mb-3 col-md-6">
+									<label for="first-name" class="form-label">First Name</label>
+									<input type="text" name="first-name" id="first-name" class="form-control input" required>
+								</div>
 
-					<div class="mb-3">
-						<label for="last-name" class="form-label">Last Name</label>
-						<input type="text" name="last-name" id="last-name" class="form-control">
-					</div>
+								<div class="mb-3 col-md-6"> 
+									<label for="last-name" class="form-label">Last Name</label>
+									<input type="text" name="last-name" id="last-name" class="form-control input" required>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="mb-3 col-md-6">
+									<label for="email" class="form-label">Email</label>
+									<input type="email" name="email" id="email" class="form-control input">
+								</div>
 
-					<div class="mb-3">
-						<label for="email" class="form-label">Email</label>
-						<input type="email" name="email" id="email" class="form-control">
-					</div>
-
-					<div class="mb-3">
-						<label for="phone" class="form-label">Phone number</label>
-						<input type="phone" name="phone" id="phone" class="form-control">
-					</div>
-
-					<div class="mb-3">
-						<label for="pwd" class="form-label">Password</label>
-						<input type="password" name="pwd" id="pwd" class="form-control">
-					</div>
-
-					<div class="mb-3">
-						<label for="confirm-pwd" class="form-label">Confirm password</label>
-						<input type="password" name="confirm-pwd" id="confirm-pwd" class="form-control">
-					</div>
-				</form>
-			</div>
+								<div class="mb-3 col-md-6">
+									<label for="phone" class="form-label">Phone number</label>
+									<input type="phone" name="phone" id="phone" class="form-control input">
+								</div>
+							</div>
+		
+							<div class="row">
 			
-			<div class="p-5">
-				<button class="btn btn-success shadow-sm mb-4" id="button">Create Account</button>
-				<div>Already have an account? <a href="#" class="fw-bold">Log in</a></div>
+								<div class="mb-3 col-md-6">
+									<label for="pwd" class="form-label">Password</label>
+									<input type="password" name="pwd" id="pwd" class="form-control input error" required>
+									<span></span>
+								</div>
+
+								<div class="mb-3 col-md-6">
+									<label for="confirm-pwd" class="form-label">Confirm password</label>
+									<input type="password" name="confirm-pwd" id="confirm-pwd" class="form-control input error" required>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="px-5 pt-4 pb-5">
+						<button type="submit" class="btn btn-success shadow-sm mb-4" id="button" >Create Account</button>
+						<div>
+							Already have an account? <a href="#" class="fw-bold">Log in</a>
+						</div>
+					</div>
+					
+				</form>
 			</div>
 
 		</div>

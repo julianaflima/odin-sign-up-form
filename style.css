@@ -23,12 +23,36 @@ html{
     min-width: 30%;
 }
 
-.form-side {
+.light-section {
 	background-color: white;
 }
 
-.form {
-	column-gap: 50px;
+.my-table {
+	max-width: 546px;
+}
+
+.input {
+	max-width: 248px;
+}
+
+.input:focus {
+	box-shadow: 2px 2px 4px rgb(131, 151, 136);
+	border-color: rgb(131, 151, 136);
+}
+
+span::after {
+	font-size: .7em;
+	display: block;
+	content: "* Passwords do not match";
+	color: red;
+}
+
+input[type="password"]:invalid {
+	border-color: red
+}
+
+input:valid {
+	border-color: blue;
 }
 
 #button {
@@ -40,4 +64,8 @@ a {
 	text-decoration: none;
 	color: rgb(131, 151, 136);
 }
+
+
+
+
 
