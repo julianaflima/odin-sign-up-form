@@ -40,14 +40,16 @@ html{
 	border-color: rgb(131, 151, 136);
 }
 
-input[type="text"]:invalid,
-input[type="text"]:invalid {
+/*input[type="text"]:invalid,*/
+input:invalid {
 	border-color: red;
 }
 
-input[type="password"]:invalid {
+/*input[type="password"]:invalid,
+input[type="email"]:invalid,
+input[type="phone"]:invalid {
 	border-color: red
-}
+}*/
 
 input[type="password"]:invalid + span::after {
 	font-size: .7em;
