@@ -40,20 +40,22 @@ html{
 	border-color: rgb(131, 151, 136);
 }
 
-span::after {
-	font-size: .7em;
-	display: block;
-	content: "* Passwords do not match";
-	color: red;
+input[type="text"]:invalid,
+input[type="text"]:invalid {
+	border-color: red;
 }
 
 input[type="password"]:invalid {
 	border-color: red
 }
 
-input:valid {
-	border-color: blue;
+input[type="password"]:invalid + span::after {
+	font-size: .7em;
+	display: block;
+	content: "* Passwords do not match";
+	color: red;
 }
+
 
 #button {
 	background-color: rgb(131, 151, 136);
