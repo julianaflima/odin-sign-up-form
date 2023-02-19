@@ -22,7 +22,7 @@ html{
     background-position: center;
     min-width: 200px;
     max-width: 600px;
-    flex-basis: 45%;
+    flex-basis: 50%;
 }
 
 .light-section {
@@ -31,10 +31,7 @@ html{
 
 .my-table {
 	max-width: 546px;
-}
-
-.input {
-	max-width: 248px;
+	box-sizing: content-box;
 }
 
 .input:focus {
